@@ -46,6 +46,7 @@ router.post(
 
     const newPlaylist = new Playlist({
       name: req.body.name,
+      username: req.user.name,
       platform: req.body.platform,
       url: req.body.url,
       user: req.user.id

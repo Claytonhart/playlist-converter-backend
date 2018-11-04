@@ -7,6 +7,10 @@ const PlaylistSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "users"
   },
+  username: {
+    type: String,
+    required: true
+  },
   name: {
     type: String,
     required: true
